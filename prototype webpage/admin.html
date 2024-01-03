@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+.header {
+  display: block;
+  text-decoration: none;
+  height: 70px;
+  font-size: 18px;
+  background-color: white;
+}
+
+body { background-color: #f1f1f1;}
+
+.drop li {
+  display: block;
+  list-style: none;
+}
+
+.drop ul li a {
+ float: left;
+ text-decoration: none;
+ color: black;
+}
+
+.drop {
+  float: right;
+  margin-left: 100px;
+}
+
+
+.drop .drp-ctn {
+   display: none;
+   position: absolute;
+}
+
+.drop a:hover {
+  background: grey;
+}
+
+.drop ul:hover .drp-ctn {
+   display: block;
+   cursor: pointer;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="clearfix">
+<div class="header">
+      <div style="float: left"><a href="" class="material-icons">supervisor_account ADMIN<a></div>
+      <div class="drop">
+             <li><a href="">lki</a>
+             <ul class="drp-ctn">
+               <li><a href= >LOGOUT</a></li>
+               <li><a href= >LOGOUT</a></li>
+             </ul>
+             </li>
+      </div>
+</div>
+</div>
+
+</body>
+</html>

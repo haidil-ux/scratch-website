@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {font-family: Courier;}
+
+.header {
+  background-image: url(img_mountains_wide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.content {
+  background-image: url(img_snow_wide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.footer {
+  background-image: url(img_nature_wide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.topnav {
+  position: relative;
+  top: 100px;
+  display: block;
+  width: 70%;
+  height: 52px;
+  margin: auto;
+}
+
+.topnav nav ul {
+ list-style: none;
+}
+
+.topnav a:hover {
+  color: #f1f1f1;
+  background-color: black;
+  height: 50px;
+}
+
+/* Style the topnav links */
+.topnav nav ul li a {
+  float: left;
+  display: block;
+  color: white;
+  width: 100px;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav nav ul li:hover .sub1 {
+  display: block;
+  background-color: red;
+  color: black;
+}
+
+.topnav ul .sub1 {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  background-color: black;
+}
+
+.box1 {
+  float: left;
+  margin-top: 150px;
+  margin-left: 15%;
+  width: 70%;
+  height: 350px;
+  border: 3px solid #f1f1f1;
+}
+
+.box1 p {
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+  font-size: 120px;
+}
+
+.box2 {
+  float: left;
+  margin-top: 105px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: 510px;
+}
+
+.box3 {
+  float: left;
+  margin-top: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 3px solid #f1f1f1;
+  opacity: 0.9;
+  height: 400px;
+  width: 70%;
+}
+
+.topnav, .box2 {
+  border: 2px solid black;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  height: 450px;
+  margin: 30px 30px;
+  padding: 13px;
+  width: 25.33%; 
+  background-color: white;
+  border-radius: 10px;
+}
+
+.column2 {
+  float: left;
+  margin: 30px 30px;
+  padding: 13px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 40px;
+  float: left;
+  width: 100%;
+}
+
+.col-50 {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+input[type=text] {
+  margin-top: 10px;
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  padding: 12px;
+  box-sizing: border-box;
+  display: block;
+}
+
+input[type=submit] {
+  margin-top: 50px;
+  background-color: #4CAF50;
+  width: 100%;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+ 
+input[type=checkbox] {
+  margin-top: 10px;
+  text-align: center;
+  color: blue;
+  display: inline-block;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+      <div class="topnav">
+        <nav> 
+           <ul>
+               <li><a href>Link</a>
+                  <ul class="sub1">
+                    <li><a href="">Home 1</a></li>
+                    <li><a href="">Home 2</a></li>
+                    <li><a href="">Home 3</a></li>
+                    <li><a href="">Home 4</a></li>
+                  </ul> 
+               </li>
+               <li style="float: left; margin-left: 22%; font-size: 45px; color: black;">Hiking.com</li>
+               <li><a href="#" style="float:right; width: 150px;">Other Link</a></li>
+           </ul>
+        </nav>
+      </div>
+      <div class="box1"> 
+          <p>LET'S HIKING TOGETHER</p>
+      </div>
+</div>
+
+<div class="clearfix">
+  <div class="content">
+     <div class="box2">
+         <div class="clearfix">
+            <div class="column">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </div>
+            <div class="column">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </div>
+            <div class="column">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </div>
+         </div>
+     </div>
+  </div>
+</div>
+
+<div class="footer">
+    <div class="box3"> 
+         <div class="clearfix">
+               <div class="column2" style="height: 340px; width: 25.33%;">
+                 <div>
+                  <p>About Us</p>
+                  <p>Description</p>
+                  <p>Contact:</p>
+                  <p> Official Email </p>
+                  <p> company_1@email.com </p>
+                  <p> No.Phone </p>
+                  <p> +07 198xxxxxxx </p>
+                  <p><a href="">Privacy</a></p>
+                  <p><a href="">Terms of Service</a></p>
+                 </div>
+               </div>
+             <div class="column2" style="height: 200px; width: 60.33%; margin-top: 30px;">
+                 <form action="/webpage_test.html">
+                   <div class="clearfix">
+                      <div class="col-50">
+                        <label for="email">GET NEWSLETTER NOW!</label>
+                      </div>
+                      <div class="col-50">
+                        <input type="text" id="email" name="email" placeholder="Email Address...">
+                      </div>
+                      <div class="col-50">
+                      <input type="checkbox" id="notify" name="notify"> I agree with terms & conditions. I want to get <p> all news notification from this page.</p>
+                      </div>
+                      <div class="col-50">
+                        <input type="submit" value="Submit">
+                      </div>
+                   </div>
+                 </form> 
+             <div class="col-50" style="margin-top: 50px; text-align: right;">
+             <p> Copyright 2020</p>
+             </div>
+            </div>
+          </div>
+    </div>
+ </div>
+
+</body>
+</html> 
